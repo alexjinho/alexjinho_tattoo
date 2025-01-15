@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Tattoo</title>
+    <style>
+        /* Add your GeoCities-style CSS here */
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: red;
+            text-shadow: 2px 2px yellow;
+        }
+        .form-container {
+            background: white;
+            border: 2px solid black;
+            padding: 20px;
+            margin: auto;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .form-container input, .form-container textarea {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .book-now-btn {
+            background: linear-gradient(to right, orange, red);
+            color: white;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .book-now-btn:hover {
+            transform: scale(1.1);
+        }
+        .gif-banner {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formless Reality Tattoo</h1>
+    <div class="form-container">
+        <p>Electric tattooing by YOUR NAME. Fill out the form below to book an appointment!</p>
+        <form action="https://formsubmit.co/YOUR_EMAIL" method="POST">
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="phone" placeholder="Phone Number" required>
+            <textarea name="design_details" rows="5" placeholder="Describe your tattoo idea!" required></textarea>
+            <button type="submit" class="book-now-btn">Book Now!</button>
+        </form>
+    </div>
+    <div class="gif-banner">
+        <img src="YOUR_GIF_URL" alt="Cool GIF" style="width: 100%; max-width: 500px;">
+    </div>
+</body>
+</html>
