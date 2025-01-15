@@ -3,53 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tattoo booking form</title>
+    <title>Tattoo Booking Form</title>
     <style>
-        /* Add your GeoCities-style CSS here */
+        /* Add your dark mode-friendly CSS */
         body {
-            font-family: Arial, sans-serif;
-            background: #f3f3f3;
-            color: #333;
+            font-family: "Courier New", Courier, monospace; /* Coding vibe font */
+            background: #000; /* Black background */
+            color: #fff; /* White text */
             text-align: center;
             margin: 0;
             padding: 20px;
         }
         h1 {
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            color: red;
-            text-shadow: 2px 2px yellow;
+            font-family: "Courier New", Courier, monospace; /* Match body font */
+            color: #00ff00; /* Retro green text */
+            text-shadow: 2px 2px #00aa00; /* Neon effect */
         }
         .form-container {
-            background: white;
-            border: 2px solid black;
+            background: #111; /* Darker grey for contrast */
+            border: 2px solid #00ff00; /* Green neon border */
             padding: 20px;
             margin: auto;
             width: 90%;
             max-width: 500px;
-            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5); /* Neon glow */
         }
         .form-container input, .form-container textarea {
             display: block;
             width: 90%;
             margin: 10px auto;
             padding: 10px;
-            border: 1px solid #ccc;
+            background: #222; /* Slightly lighter black */
+            color: #fff; /* White text */
+            border: 1px solid #444; /* Subtle grey border */
             border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+        }
+        .form-container input::placeholder,
+        .form-container textarea::placeholder {
+            color: #888; /* Placeholder text in grey */
         }
         .book-now-btn {
-            background: linear-gradient(to right, orange, red);
-            color: white;
+            background: linear-gradient(to right, #00ff00, #009900); /* Neon green gradient */
+            color: black; /* Text contrast */
             font-size: 16px;
+            font-family: "Courier New", Courier, monospace;
             border: none;
             padding: 10px 20px;
             cursor: pointer;
-            transition: transform 0.2s;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
         .book-now-btn:hover {
             transform: scale(1.1);
+            box-shadow: 0px 0px 10px #00ff00; /* Glow effect */
         }
         .gif-banner {
             margin-top: 20px;
+        }
+        .gif-banner img {
+            border: 2px solid #00ff00; /* Neon frame for GIF */
+            box-shadow: 0px 0px 10px #00ff00; /* Glow effect */
         }
     </style>
 </head>
