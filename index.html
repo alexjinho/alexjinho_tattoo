@@ -114,6 +114,18 @@
             line-height: 1.5;
             text-align: center;
         }
+        .book-now-container {
+        display: flex;               /* Enable flexbox */
+        justify-content: center;     /* Center the button and GIFs */
+        align-items: center;         /* Align vertically */
+        gap: 10px;                   /* Space between button and GIFs */
+        margin-top: 20px;            /* Space above the button */
+        }
+
+        .book-now-container img {
+        width: 25px;                 /* Set the width for the skull GIFs */
+        height: auto;                /* Maintain aspect ratio */
+        }
     </style>
 </head>
 <body>
@@ -121,12 +133,12 @@
     <div class="form-container">
         <p>Electric tattooing by Alex Jinho King</p>
         <div class="flanked-text">
-            <img src="17.gif" alt="Skull GIF">
+            <img src="17.gif" alt="flaming Skull GIF">
             <p>
                 Tumbleweed Tattoo<br>
                 784 E Hastings
             </p>
-            <img src="17.gif" alt="Skull GIF">
+            <img src="17.gif" alt="flaming Skull GIF">
         </div>
         <form action="https://formsubmit.co/alex.jinho.king@gmail.com" method="POST">
             <input type="hidden" name="_redirect" value="https://github.com/alexjinho/alexjinho_tattoo/thankyou.html">
@@ -170,7 +182,11 @@
             <input type="text" id="days" name="days" placeholder="i.e. your availability" required>
 
             <!-- Submit Button -->
+            <div class="book-now-container">
+            <img src="44.gif" alt="mace GIF">
             <button type="submit" class="book-now-btn">Book Now</button>
+            <img src="44.gif" alt="mace GIF">
+            </div>
 
             <!-- Note for Response Time -->
             <p>I will email you back ASAP</p>
