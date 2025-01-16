@@ -64,8 +64,14 @@
             margin-top: 20px;
         }
         .gif-banner img {
-            border: 2px solid #00ff00; /* Neon frame for GIF */
-            box-shadow: 0px 0px 10px #00ff00; /* Glow effect */
+            display: flex;              /* Enable flexbox for alignment */
+            justify-content: center;    /* Center the GIFs horizontally */
+            align-items: center;        /* Align the GIFs vertically */
+            gap: 10px;                  /* Add space between the GIFs */
+            margin-top: 20px;           /* Space above the banner */
+            padding: 10px;              /* Padding around the GIFs */
+            background: #111;           /* Optional: Dark background for contrast */
+            border-radius: 10px;        /* Optional: Round the edges of the banner */
         }
         .scaled-gif {
             width: 100px; /* Set the desired width */
