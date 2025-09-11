@@ -7,24 +7,24 @@
   <title>Flash – Alex Jinho Tattoo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: white;
+      font-family: Courier, monospace;
+      background-color: #ffffff;
       color: black;
       margin: 0;
-      padding: 1rem;
+      padding: 0;
       text-align: center;
     }
 
     h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      margin-bottom: 1rem 0;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, 
-        minmax(150px, 1fr));
-      gap: 1rem;
+    .gallery img {
+      width: 100%;       /* fills screen width */
+      height: auto;      /* keeps proportions */
+      display: block;    /* removes inline gaps */
+      margin: 0 auto;    /* centers if needed */
     }
 
     .gallery img {
