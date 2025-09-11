@@ -126,6 +126,30 @@
         width: 25px;                 /* Set the width for the skull GIFs */
         height: auto;                /* Maintain aspect ratio */
         }
+        .xp-button {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 10px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      color: black;
+      background: #d4d0c8; /* classic XP grey */
+      border: 2px solid #808080;
+      border-top-color: #ffffff; /* light top edge */
+      border-left-color: #ffffff; /* light left edge */
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #ffffff;
+}
+
+.xp-button:active {
+  border: 2px solid #808080;
+  border-top-color: #404040;  /* darker top */
+  border-left-color: #404040; /* darker left */
+  box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
+  background: #c0c0c0; /* darker when pressed */
+}
+
     </style>
 </head>
 <body>
@@ -137,7 +161,7 @@
             <p>
                 207 West Hastings<br>
                 Downtown Vancouver, BC<br>
-                <a href="flash.html" style="text-decoration: none; color: inherit;">
+                <a href="flash.html" class="xp-button">View Flash</a>
                 View Flash
                 </a>
             </p>
