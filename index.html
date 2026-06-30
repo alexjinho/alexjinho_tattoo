@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
     <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
@@ -17,11 +18,13 @@
             margin: 0;
             padding: 20px;
         }
+
         h1 {
             font-family: "Courier New", Courier, monospace;
             color: #00ff00;
             text-shadow: 2px 2px #00aa00;
         }
+
         .form-container {
             background: #000;
             border: 2px solid #00ff00;
@@ -31,6 +34,7 @@
             max-width: 500px;
             box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.5);
         }
+
         /* Left-align labels */
         form label {
             display: block;
@@ -42,7 +46,8 @@
         }
 
         /* Input fields and text area */
-        form input, form textarea {
+        form input,
+        form textarea {
             display: block;
             width: 90%;
             margin: 5px auto;
@@ -114,44 +119,59 @@
             line-height: 1.5;
             text-align: center;
         }
+
         .book-now-container {
-        display: flex;               /* Enable flexbox */
-        justify-content: center;     /* Center the button and GIFs */
-        align-items: center;         /* Align vertically */
-        gap: 10px;                   /* Space between button and GIFs */
-        margin-top: 20px;            /* Space above the button */
+            display: flex;
+            /* Enable flexbox */
+            justify-content: center;
+            /* Center the button and GIFs */
+            align-items: center;
+            /* Align vertically */
+            gap: 10px;
+            /* Space between button and GIFs */
+            margin-top: 20px;
+            /* Space above the button */
         }
 
         .book-now-container img {
-        width: 25px;                 /* Set the width for the skull GIFs */
-        height: auto;                /* Maintain aspect ratio */
+            width: 25px;
+            /* Set the width for the skull GIFs */
+            height: auto;
+            /* Maintain aspect ratio */
         }
+
         .xp-button {
-      display: inline-block;
-      padding: 8px 16px;
-      margin-top: 10px;
-      font-family: "Courier New", Courier, monospace;
-      font-size: 14px;
-      color: black;
-      background: #d4d0c8; /* classic XP grey */
-      border: 2px solid #808080;
-      border-top-color: #ffffff; /* light top edge */
-      border-left-color: #ffffff; /* light left edge */
-      text-decoration: none;
-      cursor: pointer;
-      box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #ffffff;
-}
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 10px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            color: black;
+            background: #d4d0c8;
+            /* classic XP grey */
+            border: 2px solid #808080;
+            border-top-color: #ffffff;
+            /* light top edge */
+            border-left-color: #ffffff;
+            /* light left edge */
+            text-decoration: none;
+            cursor: pointer;
+            box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #ffffff;
+        }
 
-.xp-button:active {
-  border: 2px solid #808080;
-  border-top-color: #404040;  /* darker top */
-  border-left-color: #404040; /* darker left */
-  box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
-  background: #c0c0c0; /* darker when pressed */
-}
-
+        .xp-button:active {
+            border: 2px solid #808080;
+            border-top-color: #404040;
+            /* darker top */
+            border-left-color: #404040;
+            /* darker left */
+            box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #ffffff;
+            background: #c0c0c0;
+            /* darker when pressed */
+        }
     </style>
 </head>
+
 <body>
     <h1>@alexjinho Tattoo</h1>
     <div class="form-container">
@@ -161,7 +181,9 @@
             <p>
                 119 West Pender<br>
                 Downtown Vancouver, BC<br>
-                <a href="flash.html" class="xp-button">View Flash</a>
+                <a href="flash.html" class="xp-button">View Flash (Black and Grey)</a>
+                <a href="flash_2.html" class="xp-button">View Flash (Colour)</a>
+                <a href="portfolio.html" class="xp-button">View Flash (Colour)</a>
                 </a>
             </p>
             <img src="17.gif" alt="flaming Skull GIF">
@@ -189,11 +211,13 @@
 
             <!-- Placement and Size (Mandatory) -->
             <label for="placement_size">Placement and Size *</label>
-            <input type="text" id="placement_size" name="placement_size" placeholder="e.g., Left forearm, 5x7 inches" required>
+            <input type="text" id="placement_size" name="placement_size" placeholder="e.g., Left forearm, 5x7 inches"
+                required>
 
             <!-- Design Details (Mandatory) -->
             <label for="design_details">Describe your tattoo idea *</label>
-            <textarea id="design_details" name="design_details" rows="5" placeholder="Describe your tattoo idea" required></textarea>
+            <textarea id="design_details" name="design_details" rows="5" placeholder="Describe your tattoo idea"
+                required></textarea>
 
             <!-- Instagram Handle (Optional) -->
             <label for="ig_handle">Instagram Handle (Optional)</label>
@@ -209,9 +233,9 @@
 
             <!-- Submit Button -->
             <div class="book-now-container">
-            <img src="44.gif" alt="mace GIF">
-            <button type="submit" class="book-now-btn">Book Now</button>
-            <img src="44.gif" alt="mace GIF">
+                <img src="44.gif" alt="mace GIF">
+                <button type="submit" class="book-now-btn">Book Now</button>
+                <img src="44.gif" alt="mace GIF">
             </div>
 
             <!-- Note for Response Time -->
@@ -224,4 +248,5 @@
         <img src="32.gif" alt="skull GIF" class="scaled-gif">
     </div>
 </body>
+
 </html>
